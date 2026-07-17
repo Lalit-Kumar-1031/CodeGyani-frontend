@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.purple-bg{
+@apply bg-[#2E0864]
+}
+
+.orange-bg{
+    @apply bg-[#F45116]
+}

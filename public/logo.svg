@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Code Gyani Logo</title>
+  <desc id="desc">Purple and orange split-brain coding logo with the text Code Gyani and tagline Smart Mind. Clean Code.</desc>
+
+  <defs>
+    <linearGradient id="purpleGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5212A3"/>
+      <stop offset="1" stop-color="#25005F"/>
+    </linearGradient>
+
+    <linearGradient id="orangeGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF6A00"/>
+      <stop offset="1" stop-color="#FF3D00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Transparent background -->
+
+  <!-- Brain icon -->
+  <g transform="translate(300 150)">
+    <!-- Left brain -->
+    <path
+      d="M280 40
+         C225 5 165 32 156 86
+         C103 69 65 111 78 161
+         C31 178 22 233 54 267
+         C20 301 34 361 78 375
+         C59 425 96 471 146 463
+         C158 515 219 537 262 501
+         C280 486 288 467 288 442
+         L288 82
+         C288 65 287 52 280 40Z"
+      fill="url(#purpleGradient)"/>
+
+    <!-- Right brain -->
+    <path
+      d="M320 40
+         C375 5 435 32 444 86
+         C497 69 535 111 522 161
+         C569 178 578 233 546 267
+         C580 301 566 361 522 375
+         C541 425 504 471 454 463
+         C442 515 381 537 338 501
+         C320 486 312 467 312 442
+         L312 82
+         C312 65 313 52 320 40Z"
+      fill="url(#orangeGradient)"/>
+
+    <!-- Center separator -->
+    <rect x="292" y="60" width="16" height="410" rx="8" fill="#FFFFFF"/>
+
+    <!-- Left circuits -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="206" cy="98" r="22"/>
+      <path d="M206 120V188"/>
+
+      <circle cx="136" cy="153" r="20"/>
+      <path d="M150 168L196 214"/>
+
+      <circle cx="102" cy="264" r="22"/>
+      <path d="M124 264H178"/>
+
+      <circle cx="143" cy="362" r="20"/>
+      <path d="M157 347L198 306"/>
+
+      <circle cx="210" cy="432" r="22"/>
+      <path d="M210 410V353"/>
+
+      <path d="M112 209H145L162 228H188"/>
+    </g>
+
+    <!-- Right circuits -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="394" cy="98" r="22"/>
+      <path d="M394 120V188H456"/>
+
+      <circle cx="482" cy="188" r="20"/>
+      <path d="M468 202L430 240"/>
+
+      <circle cx="500" cy="264" r="22"/>
+      <path d="M478 264H430"/>
+
+      <circle cx="460" cy="362" r="20"/>
+      <path d="M446 347L405 306"/>
+
+      <circle cx="392" cy="432" r="22"/>
+      <path d="M392 410V353"/>
+    </g>
+
+    <!-- Code brackets -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M270 220L225 265L270 310"/>
+      <path d="M330 220L375 265L330 310"/>
+    </g>
+
+    <!-- Center nodes -->
+    <circle cx="300" cy="210" r="17" fill="#FFFFFF"/>
+    <circle cx="300" cy="320" r="17" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Brand name -->
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800" text-anchor="middle">
+    <text x="600" y="820" font-size="132" letter-spacing="4">
+      <tspan fill="#321078">CODE</tspan>
+      <tspan fill="#FF4B0B"> GYANI</tspan>
+    </text>
+  </g>
+</svg>
