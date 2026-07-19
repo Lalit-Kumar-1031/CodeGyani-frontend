@@ -22,20 +22,20 @@ function TopNavbar() {
           Home
         </NavLink>
 
-        <NavLink to="/courses" className={navLinkClass}>
-          Courses
-        </NavLink>
-
         <NavLink to="/register" className={navLinkClass}>
-          Register
+          Technologies
         </NavLink>
 
-        <NavLink to="/training" className={navLinkClass}>
-          Training
+        <NavLink to="/trainings" className={navLinkClass}>
+          Trainings
         </NavLink>
 
         <NavLink to="/gallery" className={navLinkClass}>
-          Gallery
+          Batches
+        </NavLink>
+
+        <NavLink to="/about-us" className={navLinkClass}>
+          About Us
         </NavLink>
       </div>
       <button className="hidden md:flex items-center justify-center w-32 h-10 bg-[#F45116] hover:bg-[#2E0864] cursor-pointer rounded-md text-white">

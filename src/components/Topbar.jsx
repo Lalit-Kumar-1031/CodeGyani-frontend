@@ -9,7 +9,7 @@ function Topbar() {
       {/* Left Part Text */}
       <div className="w-full flex flex-row items-center justify-center lg:w-1/2 h-full gap-2">
         <VscWorkspaceTrusted className="w-5 h-5 hover:text-white text-[#F45116]" />
-        <p className="text-white">
+        <p className="text-white text-sm">
           Build in-demand skills with industry-focused training programs
         </p>
       </div>
