@@ -1,6 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import UserLayout from "../layouts/UserLayout";
 import Home from "../pages/public/Home";
+import AboutUs from "../pages/public/AboutUs";
+import ContactUs from "../pages/public/ContactUs";
+import TrainingRegistration from "../pages/user/TrainingRegistration";
 
 export default function AppRoutes() {
   return (
@@ -8,6 +11,11 @@ export default function AppRoutes() {
        {/* UserLayout */}
       <Route path="/" element={<UserLayout />}>
         <Route index element={<Home />}/>
+        <Route path="/about-us" element={<AboutUs />}/>
+        <Route path="/contact-us" element={<ContactUs />}/>
+        <Route path="/training-registration" element={<TrainingRegistration />}/>
+        
+
       </Route>
     </Routes>
   );

@@ -4,6 +4,18 @@
 @apply bg-[#2E0864]
 }
 
-.orange-bg{
-    @apply bg-[#F45116]
+@theme {
+  --color-primary: #F45116;
+  --color-secondary: #2E0864;
+}
+
+/* hide the scroll bar */
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }

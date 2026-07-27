@@ -6,8 +6,8 @@ import { IoMenuSharp } from "react-icons/io5";
 function TopNavbar() {
   const navLinkClass = ({ isActive }) =>
     isActive
-      ? "text-[#F45116] font-semibold border-b-2 border-[#F45116] pb-2"
-      : "text-[#2E0864] font-medium hover:text-[#F45116]";
+      ? "text-primary font-semibold border-b-2 border-primary pb-2"
+      : "text-secondary font-medium hover:text-primary";
 
   return (
     <div className="container mx-auto py-2 px-10 flex justify-between items-center border-b border-gray-300">
@@ -22,9 +22,9 @@ function TopNavbar() {
           Home
         </NavLink>
 
-        <NavLink to="/register" className={navLinkClass}>
+        <a href="#technologies" className={navLinkClass}>
           Technologies
-        </NavLink>
+        </a>
 
         <NavLink to="/trainings" className={navLinkClass}>
           Trainings
@@ -37,8 +37,12 @@ function TopNavbar() {
         <NavLink to="/about-us" className={navLinkClass}>
           About Us
         </NavLink>
+
+        <NavLink to="/contact-us" className={navLinkClass}>
+          Contact Us
+        </NavLink>
       </div>
-      <button className="hidden md:flex items-center justify-center w-32 h-10 bg-[#F45116] hover:bg-[#2E0864] cursor-pointer rounded-md text-white">
+      <button className="hidden md:flex items-center justify-center w-32 h-10 bg-primary hover:bg-secondary cursor-pointer rounded-md text-white">
         Login/Signup
       </button>
       
