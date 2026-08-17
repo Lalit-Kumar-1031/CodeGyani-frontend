@@ -1,5 +1,6 @@
 import React from "react";
 import hero from "../assets/hero.jpg";
+import heroTech from '../assets/trainings/heroTech2.png';
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaBriefcase } from "react-icons/fa";
@@ -54,7 +55,7 @@ function Hero() {
         </div>
         {/* Right Part */}
         <div className="w-full md:w-1/2 h-90 md:h-105 ">
-          <img src={hero} alt="Hero" className="w-full h-full object-cover rounded-md" />
+          <img src={heroTech} alt="Hero" className="w-full h-full object-cover rounded-md" />
         </div>
       </div>
     </section>

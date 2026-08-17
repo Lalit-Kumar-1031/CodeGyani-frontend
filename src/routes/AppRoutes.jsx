@@ -4,6 +4,7 @@ import Home from "../pages/public/Home";
 import AboutUs from "../pages/public/AboutUs";
 import ContactUs from "../pages/public/ContactUs";
 import TrainingRegistration from "../pages/user/TrainingRegistration";
+import SummerTrainingDetails from "../pages/public/SummerTrainingDetails";
 
 export default function AppRoutes() {
   return (
@@ -14,6 +15,7 @@ export default function AppRoutes() {
         <Route path="/about-us" element={<AboutUs />}/>
         <Route path="/contact-us" element={<ContactUs />}/>
         <Route path="/training-registration" element={<TrainingRegistration />}/>
+        <Route path="/summer-training" element={<SummerTrainingDetails />}/>
         
 
       </Route>

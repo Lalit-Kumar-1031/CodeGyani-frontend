@@ -246,9 +246,9 @@ function Home() {
               </div>
               <p className="text-gray-600 mb-5 mt-5">{info.description}</p>
               <div className="flex flex-col w-full">
-                <button className="w-full text-primary border border-primary py-2 px-5 mb-5 cursor-pointer rounded-lg font-medium hover:text-secondary hover:border-secondary">
+                <Link to="/summer-training" className="w-full text-primary border border-primary py-2 px-5 mb-5 cursor-pointer rounded-lg font-medium hover:text-secondary hover:border-secondary text-center">
                   View Details
-                </button>
+                </Link>
                 <Link to="/training-registration" className="w-full bg-primary hover:bg-secondary text-white py-2 px-5 cursor-pointer rounded-lg text-center font-medium">
                   Enroll Now
                 </Link>
