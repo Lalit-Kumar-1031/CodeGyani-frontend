@@ -7,6 +7,9 @@ import TrainingRegistration from "../pages/user/TrainingRegistration";
 import SummerTrainingDetails from "../pages/public/SummerTrainingDetails";
 import StudentLayout from "../layouts/StudentLayout";
 import StudentHome from "../pages/user/StudentHome";
+import Login from "../pages/public/auth/Login";
+import Register from "../pages/public/auth/Register";
+import SendForgotPasswardOtp from "../pages/public/auth/SendForgotPasswardOtp";
 
 export default function AppRoutes() {
   return (
@@ -16,6 +19,10 @@ export default function AppRoutes() {
         <Route index element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        {/* Auth Routes */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/send-forgot-password-otp" element={<SendForgotPasswardOtp />} />
         <Route
           path="/training-registration"
           element={<TrainingRegistration />}
