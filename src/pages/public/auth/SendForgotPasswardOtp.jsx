@@ -3,8 +3,10 @@ import login from "../../../assets/auth/login.jpg";
 import CustomInput from "../../../components/Auth/CustomInput";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function SendForgotPasswardOtp() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
   });
@@ -17,12 +19,19 @@ function SendForgotPasswardOtp() {
       [name]: value,
     }));
   };
+
+const handleOnSubmit=(e)=>{
+  e.preventDefault();
+  navigate("/verify-forgot-password-otp");
+}  
+
+
   return (
     <div className="w-full flex flex-row h-150">
       {/* Left Form */}
       <div className="flex flex-col flex-1 items-center justify-start">
         <div className="flex flex-col border border-black w-[80%] md:w-[70%] mt-20 py-10 px-8">
-          <form>
+          <form onSubmit={handleOnSubmit}>
             <h1 className="text-2xl font-bold text-center">
               Forgot Your Passward?
             </h1>
@@ -41,7 +50,7 @@ function SendForgotPasswardOtp() {
               className="mt-5"
             />
             <br />
-            <button className="w-full p-2.5 font-medium text-white rounded-md bg-primary hover:bg-primary/80">
+            <button type="submit" className="w-full p-2.5 font-medium text-white rounded-md bg-primary hover:bg-primary/80">
               Send Verification Code
             </button>
           </form>

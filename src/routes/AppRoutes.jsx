@@ -10,6 +10,8 @@ import StudentHome from "../pages/user/StudentHome";
 import Login from "../pages/public/auth/Login";
 import Register from "../pages/public/auth/Register";
 import SendForgotPasswardOtp from "../pages/public/auth/SendForgotPasswardOtp";
+import VerifyForgotPasswardOtp from "../pages/public/auth/VerifyForgotPasswardOtp";
+import SetNewPassward from "../pages/public/auth/SetNewPassward";
 
 export default function AppRoutes() {
   return (
@@ -23,6 +25,8 @@ export default function AppRoutes() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/send-forgot-password-otp" element={<SendForgotPasswardOtp />} />
+      <Route path="/verify-forgot-password-otp" element={<VerifyForgotPasswardOtp />} />
+      <Route path="/set-new-passward" element={<SetNewPassward />} />
         <Route
           path="/training-registration"
           element={<TrainingRegistration />}
